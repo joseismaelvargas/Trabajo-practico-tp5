@@ -12,3 +12,4 @@ C:\Users\i0093\Desktop\Tp5\tp5\obj\Debug\net10.0\refint\tp5.dll
 C:\Users\i0093\Desktop\Tp5\tp5\obj\Debug\net10.0\tp5.pdb
 C:\Users\i0093\Desktop\Tp5\tp5\obj\Debug\net10.0\tp5.genruntimeconfig.cache
 C:\Users\i0093\Desktop\Tp5\tp5\obj\Debug\net10.0\ref\tp5.dll
+C:\Users\i0093\Desktop\Tp5\tp5\obj\Debug\net10.0\tp5.sourcelink.json
