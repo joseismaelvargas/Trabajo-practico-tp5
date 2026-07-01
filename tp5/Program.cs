@@ -50,7 +50,7 @@
 // {
 
 //     Console.WriteLine(vector[i]);
-   
+
 //     if (vector[i] > mayor||i== 2)
 //     {
 //            mayor=vector[i];
@@ -92,14 +92,149 @@
 //     }
 // }
 
+// ejersicio4
+
+// using System.Dynamic;
+
+// Console.WriteLine("INGRSE LA CANTIDAD DE COLUMNAS");
+// int N =Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("###############################");
+
+// int  [,] matriz2=new int[2,N];
+// int numerospares=0;
+// // inicializa la matriz en 0
+// int numeromenor=matriz2[0,0];
+
+// for(int i = 0; i < 2; i++)
+// {
+//     for(int j = 0; j < N; j++)
+//     {
+//         Random random=new Random();
+//         int numeros=random.Next(10,20);
+//         matriz2[i,j]=numeros;
+//     }
+// }
+
+// // mostrar matriz
+// for(int i = 0; i < 2; i++)
+// {
+//     for (int j=0;j<N;j++)
+//     {
+//         Console.WriteLine(matriz2[i,j]+"\t");
+       
+
+//         if (matriz2[i, j] < numeromenor)
+//         {
+//            numeromenor=matriz2[i,j];
+//         }
+//         if (matriz2[i, j] % 2 == 0)
+//         {
+//             numerospares++;
+//         }
+//     }
+//     Console.WriteLine();
+// }
+// Console.WriteLine("###############################");
+// Console.WriteLine("cantidad de numeros pares "+numerospares);
+// Console.WriteLine("El numeros menor es "+numeromenor);
+
+// ejersicio 5
+Console.WriteLine("##############################################");
+Console.WriteLine("Ingrese cantidad de filas");
+int F=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ingrese cantidad de Columnas");
+int C=Convert.ToInt32(Console.ReadLine());
+int numerospares=0;
+int numerosImapares=0;
+int [,]matriz3=new int[F,C];
+for (int i=0;i<F;i++)
+{
+    
+    for(int j= 0; j < C; j++)
+    {
+      Console.WriteLine($"Ingrese el valor en la posicion |{i}|{j}|");
+       int numeros=Convert.ToInt32(Console.ReadLine());
+        matriz3[i,j]=numeros;
+      
+     
+    }
+}
+Console.WriteLine("mostrar matriz");
+
+for (int i=0;i <F;i++)
+{for(int j = 0; j < C; j++)
+    {
+       Console.WriteLine(matriz3[i,j]);
+        if (matriz3[i, j] % 2 == 0)
+        {
+            numerospares++;
+        }
+        else
+        {
+            numerosImapares++;
+        }
+    }
+   
+}
+double porcentaje=(double)numerospares/matriz3.Length;
+Console.WriteLine("##############################################");
+Console.WriteLine("la cantidad de numeros pares son "+numerospares);
+Console.WriteLine("la cantidad de numeros Impares son "+numerosImapares);
+Console.WriteLine("El porcentaje de numeros pares es  "+porcentaje*100+"%");
 // Fuciones
-static void Bienvenida()
-{
-    Console.WriteLine("Bienvenido a superMax Todos los dias 20% descuento pagando en efectivo ");
-}
-static void Gracias()
-{
-    Console.WriteLine("Gracias por su compra");
-}
-Bienvenida();
-Gracias();
+// static void Bienvenida()
+// {
+//     Console.WriteLine("Bienvenido a superMax Todos los dias 20% descuento pagando en efectivo ");
+// }
+// static void Gracias()
+// {
+//     Console.WriteLine("Gracias por su compra");
+// }
+// Bienvenida();
+// Gracias();
+
+// static void Matrices(int a,int)
+// {
+
+// }
+// using System.IO.Compression;
+
+// int[,]matriz=new int[5,5];
+// for(int i = 0; i < 5; i++)
+// {
+//     for(int j = 0; j < 5; j++)
+//     {
+//         if (i == 2)
+//         {
+//             matriz[i,j]=1;
+
+//         }
+//         else
+//         {
+//             matriz[i,j]=0;
+//         }
+//     }
+// }
+// for(int i = 0; i < 5; i++)
+// {
+//     for( int j = 0; j < 5; j++)
+//     {
+//         Console.WriteLine(matriz[i,j]);
+//     }
+//     Console.WriteLine();
+// }
+
+// Area de un triangulo
+
+// static double AreadelTriangulo(double vase, double altura)
+// {
+//     double area;
+//     area= vase * altura;
+//     return area;
+// }
+// static void Calculador(double a,double b)
+// {
+//     double resultado=AreadelTriangulo(a,b);
+//     Console .WriteLine("El area del triangulo es "+resultado);
+// }  
+// Calculador(3.4,5.5);
